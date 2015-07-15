@@ -1,0 +1,95 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page import="org.apache.shiro.web.filter.authc.FormAuthenticationFilter"%>
+<%@ page import="org.apache.shiro.authc.ExcessiveAttemptsException"%>
+<%@ page import="org.apache.shiro.authc.IncorrectCredentialsException"%>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>世宇游戏网站登录</title>
+<link type="text/css" href="${ctx }/static/css/css.css" rel="stylesheet" />
+<script type="text/javascript" src="${ctx }/static/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="${ctx }/static/js/base/base.js"></script>
+
+<script type="text/javascript">
+	var baseUrl = "${ctx}/backEnd/login";
+	
+	/**
+	 * 检查表单数据
+	 */
+	function checkForm(){
+		alert("check form!");
+	}	
+	/**
+	 * 登录动作
+	 */
+	function login(){
+		var paras = base._formValues(base.getObject('mainForm'));
+		$.ajax({
+			type: 'POST' ,
+			url: baseUrl,
+			data: paras,
+			dataType: 'HTML' ,
+			success: loginCallback,
+			error: function(XMLHttpRequest, textStatus, errorThrown){
+				base.alert('出现未知异常，操作失败！');
+			}
+		});		
+		//base.formSubmit(baseUrl,loginCallback,"mainForm");
+	}	
+	function loginCallback(result){
+		if(result == "success"){
+			base.forward("/backEnd/frame");
+		}else{
+			alert(result);
+		}
+	}
+	
+	/**
+	 * 注册动作
+	 */
+	function register(){
+		alert("want to register!");
+	}
+</script>
+</head>
+<body>
+  <div class="bg_login">
+    <div class="mains">
+      
+      <div class="top clearfix">
+        <div class="logo_yun"><!-- <img src="${ctx }/static/images/logo_yun.png"/>--></div>
+        <div class="splitline"></div>
+        <!-- 
+        <div class="logo_ecs"><img src="${ctx }/static/images/logo_ecs.png"/></div>
+        <div class="logo_qt"><img src="${ctx }/static/images/logo_qt_1.png"/></div>    
+         -->  
+      </div> 
+       
+      <div class="middle">
+        <div class="login_form">
+        <form id="mainForm" name="mainForm">
+          <input type="text"  name="username" class="user" id="username" value="admin" onfocus="if (value =='用户名'){value =''}" onblur="if (value ==''){value='用户名'}"/>
+          <input type="password" name="password" class="pass" id="password" value="741852963" onfocus="if (value =='密&nbsp;&nbsp;&nbsp;码'){value =''}"onblur="if (value ==''){value='密&nbsp;&nbsp;&nbsp;码'}"/>
+           <div class="remember">
+           <!-- <input name="" class="check" type="checkbox" id="" />
+            <span class="get">记住用户名</span>
+            <a href="#"><span class="forget">忘记密码？</span></a> -->
+          </div>
+          
+          <a href="#" onclick="login();"><img class="login" src="${ctx }/static/images/login.png"/></a>
+          <a href="#" onclick="register();"><img class="register" src="${ctx }/static/images/register.png"/></a>
+        </form>        
+        </div>
+      </div>       
+      <div class="bottom">
+        <div class="copyright"><!-- <img src="${ctx }/static/images/logo_qt_2.png"/> -->Copyright 2013 世宇科技有限公司 All Rights Reserved</div>
+      </div>         
+    </div>   
+  </div>
+</body>
+</html>

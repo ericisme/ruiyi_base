@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>世宇|UNIS</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+<script>
+	window.jQuery
+			|| document.write(
+					'<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
+</head>
+<body>
+	<!--[if lt IE 9]>
+            <p class="browsehappy">你使用的浏览器版本太低啦, 建议你使用火狐或Chrome以获得最好体验.
+                <a href="http://www.firefox.com.cn/">升级到火狐浏览器</a> @世宇技术支持
+            <br>
+            You are using an <strong>outdated</strong> browser, please upgrade your browser to improve your experience.
+             <a href="https://www.mozilla.org/en-US/">upgrade to Firfox</a> @UNIS Tech.</p>
+        <![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+        <script src="js/vendor/jquery.placeholder.min.js"></script>
+        <![endif]-->
+
+	<div class="container">
+		<div class="header">
+			<img src="img/logo.png" alt="" class="visible-xs" width="150"><img
+				src="img/logo.png" alt="" class="hidden-xs">
+			<h2 class="clearfix signup-heading">Sign up for Worldwide
+				Conference 2014</h2>
+			<a href="" class="btn btn-lg" style="color: #56bc8a;"><span
+				class="glyphicon glyphicon-circle-arrow-left"></span> Back</a>
+		</div>
+
+		<div class="overlap">
+			<div class="primary-content">
+				<div class="language">
+					<a href="" class="btn btn-lg btn-lan ">中 文</a> <a href=""
+						class="btn btn-lg btn-lan active">English</a>
+				</div>
+				<div class="clearfix"></div>
+				<div class="signup_form">
+					<!-- 表单错误提示 -->
+					<div class="alert alert-danger alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert"
+							aria-hidden="true">&times;</button>
+						<strong>Bummer! It looks like there was an error in the
+							information you gave us. Take a look at your sign-up form for
+							more details.
+					</div>
+					<form role="form">
+						<div class="row">
+							<div class="col-sm-8">
+								<!-- Company name* -->
+								<div class="form-group">
+									<label class="sr-only" for="companyname">Company name *</label>
+									<input type="email" class="form-control error" id="companyname"
+										placeholder="Company name *">
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<!-- 国家 -->
+								<div class="form-group">
+									<h4 for="" class="signup_label sr-only">Country</h4>
+									<select class="form-control">
+										<option value="0">Where're you from?</option>
+										<option value="1">America</option>
+										<option value="2">Canada</option>
+										<option value="3">Europe</option>
+										<option value="4">中国</option>
+										<option value="5">中国香港</option>
+										<option value="6">中国台灣</option>
+										<option value="7">日本</option>
+										<option value="8">한국</option>
+										<option value="9">Others</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- /.row -->
+
+						<div class="row">
+							<!-- Arrival Date/Time -->
+							<div class="col-sm-6">
+								<h4 for="" class="signup_label">Arrival Date/Time (01.Oct
+									9:00 AM)</h4>
+								<input type="text" class="form-control col-sm-6"
+									id="arrvial-date" placeholder="01.Oct 9:00 AM">
+							</div>
+							<div class="col-sm-6">
+								<h4 for="" class="signup_label">Do you need airport pick up
+									service?</h4>
+								<div class="row">
+									<div class="col-xs-3">
+										<label class="signup_input"> <input type="radio"
+											name="pickup" id="pickup_no" value="no" checked> No
+										</label>
+									</div>
+									<div class="col-xs-3">
+										<label class="signup_input"> <input type="radio"
+											name="pickup" id="pickup_yes" value="yes"> Yes
+										</label>
+									</div>
+									<div class="col-xs-6">
+										<input style="display: none;" type="text" class="form-control"
+											id="flight_no" placeholder="Flight Number *">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.row -->
+						<!-- step 1 basic info -->
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>
+									<span class="steplabel">1</span>Your basic infomation
+								</h3>
+								<p class="help-block">
+									*Make sure the <strong>first contact</strong> is mostly
+									available, we may contact you later.
+								</p>
+								<div name="group_applicant">
+									<div class="applicant">
+										<h4></h4>
+										<button class="btn btn-default close" type="button">×
+											delete</button>
+										<div class="clearfix"></div>
+										<div class="row">
+											<div class="col-xs-8">
+												<div class="form-group">
+													<input type="text" class="form-control" id="fullname1"
+														placeholder="Full Name *" onkeyup="nameCard(this);">
+												</div>
+											</div>
+											<div class="col-xs-4">
+												<select class="form-control">
+													<option value="0">Gender</option>
+													<option value="1">Man</option>
+													<option value="2">lady</option>
+												</select>
+											</div>
+										</div>
+										<!-- /.row -->
+
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="form-group">
+													<input type="text" class="form-control" id="position1"
+														placeholder="Position">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="form-group">
+													<input type="text" class="form-control" id="phone1"
+														placeholder="mobile number *">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email1"
+														placeholder="email *">
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.applicant -->
+								</div>
+								<!-- /.group applicant -->
+								<div class="row">
+									<div class="col-sm-12">
+										<button type="button" id="add_applicant"
+											onclick="addApplicant()"
+											class="add btn btn-default btn-block">
+											<span class="glyphicon glyphicon-plus"></span> Add an
+											applicant (max 3)
+										</button>
+									</div>
+								</div>
+
+							</div>
+							<!-- /.col-sm-12 -->
+						</div>
+						<!-- /.row -->
+						<!-- /.step 1 basic info -->
+
+						<!-- step 2 Arrangement -->
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>
+									<span class="steplabel">2</span>Arrangement
+								</h3>
+								<h4>
+									<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Accommodation
+								</h4>
+								<div class="row">
+									<div class="col-xs-6">
+										<label class="signup_input input-block"> <input
+											type="radio" name="hotel" id="hotel1" value="Sheraton Hotel"
+											checked> Sheraton Hotel
+										</label>
+									</div>
+									<div class="col-xs-6">
+										<label class="signup_input input-block"> <input
+											type="radio" name="hotel" id="hotel-none"
+											value="Sheraton Hotel"> No, thanks.
+										</label>
+									</div>
+								</div>
+								<h4>
+									<span class="glyphicon glyphicon-cutlery"></span>&nbsp;&nbsp;Food
+									preference
+								</h4>
+								<div class="row">
+									<div class="col-sm-4">
+										<label class="signup_input input-block"> <input
+											type="radio" name="food" id="food1" value="chinese" checked>
+											Chinese cuisine
+										</label>
+									</div>
+									<div class="col-sm-4">
+										<label class="signup_input input-block"> <input
+											type="radio" name="food" id="food2" value="western">
+											Western cuisine
+										</label>
+									</div>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="food3"
+											placeholder="Special Diet? Like vegetarian">
+									</div>
+								</div>
+								<h4>
+									<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Recreation
+								</h4>
+								<div class="row">
+									<div class="col-sm-12">
+										<label class="signup_input input-block"> <input
+											type="checkbox" name="activity" id="activity1"
+											value="activity1"> 1. Night tour of Qi River (Oct, 20
+											night)
+										</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<label class="signup_input input-block"> <input
+											type="checkbox" name="activity" id="activity2"
+											value="activity2"> 2. Visit Former Residence of
+											Sun-Yat-Sen (Oct, 20~22 afternoon)
+										</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="signup_input input-block"> <input
+											type="checkbox" name="activity" id="activity3"
+											value="activity3"> 3. Shopping
+										</label>
+									</div>
+									<div class="col-sm-6">
+										<label class="signup_input input-block"> <input
+											type="checkbox" name="activity" id="activity4"
+											value="activity4"> 4. Entertainment (Oct, 20 & 21
+											night)
+										</label>
+									</div>
+								</div>
+							</div>
+							<!-- /.col-sm-12 -->
+						</div>
+						<!-- /.row -->
+						<!-- /.step 2 Arrangement -->
+
+						<!-- step 3 Arrangement -->
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>
+									<span class="steplabel">3</span>Your message
+								</h3>
+								<textarea class="form-control margin-bottom" rows="3"
+									placeholder="it is our pleasure to hear your voice."></textarea>
+								<p>Do you like us to promote your company during the event?</p>
+								<div class="row">
+									<div class="col-sm-3">
+										<label class="signup_input input-block"> <input
+											type="radio" name="join" id="join_no" value="no" checked>
+											No, thanks!
+										</label>
+									</div>
+									<div class="col-sm-3">
+										<label class="signup_input input-block"> <input
+											type="radio" name="join" id="join_yes" value="yes">
+											Yes, please.
+										</label>
+									</div>
+									<div class="col-sm-6">
+										<div id="send_us" style="display: none;">
+											<a href=mailto:hlj@zs-shiyu.com
+												class="btn btn-default btn-block"><span
+												class="glyphicon glyphicon-paperclip text-info"></span> send
+												email</a>
+											<p class="help-block">
+												send your company LOGO or VIDEO to us via email or QQ <br>email:
+												hlj@zs-shiyu.com | QQ:1554684868
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- /.row -->
+							</div>
+							<!-- /.col-sm-12 -->
+						</div>
+						<!-- /.row -->
+
+						<button class="btn btn-block btn-primary btn-lg">Submit</button>
+
+
+					</form>
+				</div>
+				<!-- /.signup_form -->
+			</div>
+			<!-- /.primary-content -->
+		</div>
+		<!-- /.overlap -->
+		<div class="margin-bottom" style="color: #ededed; margin-top: 2em;">
+			<small> <span class="glyphicon glyphicon-phone-alt"></span>
+				111111111 <br> <span class="glyphicon glyphicon-envelope"></span>
+				hlj@zs-shiyu.com <br> QQ: 1554684868 <br> © 2014 世宇科技 Unis
+				Technology, Inc.
+			</small>
+		</div>
+	</div>
+
+
+
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/icheck.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

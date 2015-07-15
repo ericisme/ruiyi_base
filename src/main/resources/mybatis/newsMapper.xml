@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper
+	namespace="cn.unis.dao.NewsMybatisDao">	
+
+	<!-- 查找上一条news记录 -->
+	<select id="findPrewNewsId" resultType="Long">
+		select id from backend_news 
+			where sort_number &lt;#{p1} and id!=#{p2} and status=1
+			order by sort_number desc,id desc limit 0,1;
+	</select>
+	
+	<!-- 查找上一条news记录 -->
+	<select id="findNextNewsId" resultType="Long">
+		select id from backend_news 
+			where sort_number &gt;#{p1} and id!=#{p2} and status=1
+			order by sort_number asc,id asc limit 0,1;
+	</select>
+	
+</mapper> 

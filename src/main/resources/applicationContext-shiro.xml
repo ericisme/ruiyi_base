@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"  
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:util="http://www.springframework.org/schema/util"  
+    xsi:schemaLocation="  
+     http://www.springframework.org/schema/beans   
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+     http://www.springframework.org/schema/context   
+     http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+     http://www.springframework.org/schema/util  
+     http://www.springframework.org/schema/util/spring-util-3.0.xsd"  
+    default-lazy-init="true"> 
+
+	<description>Shiro Configuration</description>
+
+	<!-- Shiro's main business-tier object for web-enabled applications -->
+	 
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager" >
+		<property name="realm" ref="shiroDbRealm" />
+		<property name="cacheManager" ref="shiroEhcacheManager" />
+	</bean>
+
+	<!-- 項目自定义的Realm -->
+	<!-- 客户端的回调地址设置，必须和下面的shiro-cas过滤器拦截的地址一致 -->
+	 
+	 
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean" >
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/backEnd/loginIndex" />
+		<property name="successUrl" value="main" />
+		<property name="filterChainDefinitions">
+			<value>
+				/backEnd/login = anon
+				/backEnd/checkLogin = anon
+				/backEnd/loginIndex = authc
+				
+				/backEnd/**      = user
+				/left/menu/**    = user
+				/permission/**   = user
+				/role/**         = user
+				/account/user/** = user		
+			    
+				/logout = logout
+				/static/** = anon		
+							
+		 	</value>
+		</property>
+	</bean>
+	<!-- <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean" >
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/loginIndex" />
+		<property name="successUrl" value="main" />
+		<property name="filterChainDefinitions">
+			<value>
+				/login = anon
+			    //loginIndex = authc
+				/logout = logout
+				/static/** = anon
+				/account/user/**=anon
+				/school/**=anon
+				/main/** = anon
+				/left/** = anon
+				/role/**=anon
+		    	/** = user
+		 	</value>
+		</property>
+	</bean>
+	 -->
+	<!-- end shiro filter -->
+	
+	
+	
+	<!-- <bean id="shiroDbRealm" class="cn.base.service.shiro.PasswordDbRealm" depends-on="userDao,unitDao,schoolDao" >-->
+	<bean id="shiroDbRealm" class="cn.ruiyi.base.service.shiro.ShiroDbRealm" depends-on="userDao,roleDao" >
+		<property name="accountService" ref="accountService"/>
+	</bean>
+     
+	<!-- 用户授权信息Cache, 采用EhCache -->
+	<bean id="shiroEhcacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+		<property name="cacheManagerConfigFile" value="classpath:ehcache/ehcache-shiro.xml"/>
+	</bean>
+	
+	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+	
+	<!-- AOP式方法级权限检查  -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor">
+		<property name="proxyTargetClass" value="true" />
+	</bean>
+	 
+	 <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">  
+        <property name="staticMethod" value="org.apache.shiro.SecurityUtils.setSecurityManager"/>  
+        <property name="arguments" ref="securityManager"/>  
+    </bean> 
+   <!-- 
+	<bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+    	<property name="securityManager" ref="securityManager"/>
+	</bean>
+	--> 
+</beans>

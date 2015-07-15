@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd"
+	default-lazy-init="true">
+
+	<description>Spring公共配置 </description>
+
+	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+	<!-- <context:component-scan base-package="cn.qtone.qtypt"> -->
+	<context:component-scan base-package="cn">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+
+	<!-- Jpa Entity Manager 配置 -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- <property name="packagesToScan" value="cn.base.entity"/> -->
+		<property name="packagesToScan" value="cn" />
+		<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter" />
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.archive.autodetection">class</prop>
+				<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</prop>
+				<prop key="net.sf.ehcache.configurationResourceName">ehcache/ehcache-hibernate-local.xml</prop>
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.use_structured_entries">true</prop>
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+				<prop key="hibernate.generate_statistics">true</prop>
+				<prop key="hibernate.default_batch_fetch_size">500</prop>
+				<prop key="hibernate.max_fetch_depth">5</prop>
+				<prop key="hibernate.jdbc.batch_size">1000</prop>
+				<prop key="hibernate.use_outer_join">true</prop>
+				<!-- 命名规则 My_NAME->MyName -->
+				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- MyBatis配置 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 自动扫描目录,省掉Configuration.xml里的手工配置Class名与缩写 -->
+		<!-- typeAliasesPackage为entity包全名,多个用逗号或者分号隔开 -->
+		<property name="typeAliasesPackage" value="cn.unis.entity" />
+		<!-- 没有把mapper文件放到与dao相同的深层目录，显式指定Mapper文件位置 -->
+		<property name="mapperLocations" value="classpath:/mybatis/*Mapper.xml" />
+		<property name="configLocation" value="classpath:/mybatis/mybatis-config.xml" />
+	</bean>
+	<!-- 在指定扫描所有接口, 动态生成MyBatis Dao接口实现 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="cn.unis" />
+		<property name="annotationClass" value="cn.unis.utils.MyBatisRepository" />
+	</bean>
+
+	<bean id="hibernateJpaVendorAdapter"
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<!-- <property name="databasePlatform" value="org.hibernate.dialect.Oracle10gDialect"
+			/> -->
+		<property name="databasePlatform" value="org.hibernate.dialect.MySQL5Dialect" />
+		<property name="generateDdl" value="true"></property>
+		<property name="showSql" value="false" />
+	</bean>
+
+	<!-- Spring Data Jpa配置 -->
+	<!-- <jpa:repositories base-package="cn" transaction-manager-ref="transactionManager"
+		entity-manager-factory-ref="entityManagerFactory"/> -->
+	<jpa:repositories base-package="cn"
+		transaction-manager-ref="transactionManager"
+		entity-manager-factory-ref="entityManagerFactory" />
+
+	<!-- Jpa 事务配置 -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager"
+		proxy-target-class="true" />
+
+	<!-- 定义aspectj -->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<bean id="myInterceptor" class="cn.unis.service.impl.TempUrlAddAndDeleteAspect" />
+
+
+	<!-- production/local development环境 -->
+	<beans profile="production,development">
+		<context:property-placeholder
+			ignore-unresolvable="true"
+			location="classpath*:/application.properties,
+          			  classpath*:/application.local.properties" />
+
+		<!-- 数据源配置, 使用应用中的DBCP数据库连接池 -->
+
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+			destroy-method="close">
+			<property name="driverClassName" value="${jdbc.driver}" />
+			<property name="url" value="${jdbc.url}" />
+			<property name="username" value="${jdbc.username}" />
+			<property name="password" value="${jdbc.password}" />
+			<property name="maxActive" value="${dbcp.maxActive}" />
+			<property name="maxIdle" value="${dbcp.maxIdle}" />
+			<property name="defaultAutoCommit" value="false" />
+			<property name="timeBetweenEvictionRunsMillis" value="3600000" />
+			<property name="minEvictableIdleTimeMillis" value="3600000" />
+		</bean>
+		<!-- 数据源配置,使用应用服务器的数据库连接池 -->
+		<!--<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/ExampleDB"
+			/> -->
+	</beans>
+
+	<!-- unit test环境 -->
+	<beans profile="test">
+		<context:property-placeholder
+			ignore-resource-not-found="true" location="classpath*:/application.test.properties" />
+
+		<!-- 简单data source -->
+		<bean id="dataSource"
+			class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+			<property name="driverClass" value="${jdbc.driver}" />
+			<property name="url" value="${jdbc.url}" />
+			<property name="username" value="${jdbc.username}" />
+			<property name="password" value="${jdbc.password}" />
+		</bean>
+
+	</beans>
+</beans>

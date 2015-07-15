@@ -1,0 +1,22 @@
+
+/* http://karacsony.pixelgyar.hu */
+.stars {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 4247px;
+	background: url("http://karacsony.pixelgyar.hu/css/../img/stars.png") repeat-x center;
+	-webkit-animation: stars 5s linear infinite;
+}
+	
+	@-webkit-keyframes stars {
+		0% {opacity: 1;}
+		50% {opacity: .2;}
+		100% {opacity: 1;}
+	}
+	
+	@-webkit-keyframes levitate {
+		0% {-webkit-transform: translate(0,0px);}
+		50% {-webkit-transform: translate(0,15px);}
+		100% {-webkit-transform: translate(0,0px);}
+	}

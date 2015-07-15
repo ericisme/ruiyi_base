@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+
+	<!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序 -->
+	<bean id="startQuertz"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean"
+		lazy-init="false">
+		<property name="triggers">
+			<list>
+				<ref bean="RechargeTask" />
+				<ref bean="autoCompleteCommodityOrderTask" />
+				<ref bean="ClearTmpPictureTask" />
+			</list>
+		</property>
+		<property name="autoStartup" value="true" />
+	</bean>
+
+
+
+	<!-- 为支付成功 已没有成功的记录 操作。 -->
+	<bean id="RechargeTask"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="Recharge" />
+		</property>
+		<property name="cronExpression">
+			<!-- 每十分钟执行一次 -->
+			<value>0 0/10 0-23 * * ?</value>
+		</property>
+	</bean>
+	<bean id="Recharge"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="quartzJob" />
+		<property name="targetMethod" value="Recharge" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+
+
+	<!-- 自动确认 已到期 的 礼品 订单（状态是已发货下 deadLineDate 少于当前时间的订单） -->
+	<bean id="autoCompleteCommodityOrderTask"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="autoCompleteCommodityOrderTaskDetail" />
+		</property>
+		<property name="cronExpression">
+			<!-- 每十秒钟执行一次 -->
+			<!-- <value>*/10 * * * * ?</value> -->
+			<!-- 第天晚上23点59分59秒执行一次 -->
+			<value>59 59 23 * * ?</value>
+		</property>
+	</bean>
+	<bean id="autoCompleteCommodityOrderTaskDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="quartzJob" />
+		<property name="targetMethod" value="autoCompleteCommodityOrder" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<!-- 自动清理上传的临时图片 -->
+	<bean id="ClearTmpPictureTask"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="ClearTmpPicture" />
+		</property>
+		<property name="cronExpression">
+			<!-- 每十分钟执行一次 -->
+			<value>0 0/10 0-1 * * ?</value>
+		</property>
+	</bean>
+
+	<bean id="ClearTmpPicture"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="quartzJob" />
+		<property name="targetMethod" value="clearTmpPicture" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+</beans>

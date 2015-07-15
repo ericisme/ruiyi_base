@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper
+	namespace="cn.unis.dao.AlipayRecordMybatisDao">
+ 
+	<update id="saveAndReturnUpdateRows">
+		update backend_alipay_record  set status = #{ALIPAY_SUCCESS} where out_trade_no = #{outTradeNo} and status = #{UNHANDLE} ;
+	</update>
+	
+	<update id="saveAndReturnUpdateRowsBySign">
+		update backend_alipay_record  set status = #{SEND} where sign = #{sign} and status = #{ALIPAY_SUCCESS} ;
+	</update>
+	
+</mapper> 

@@ -1,0 +1,59 @@
+/** begin ---apop.css---*/
+.ui-dialog-finance {
+    position:absolute;
+    z-index:1000;
+}
+.ui-tips-bubble-finance {
+	background:#E8E8E8;
+	padding:2px;
+}
+.ui-tips-bubble-finance .ui-dialog-container-finance {
+    background-color: #FFFFFF;
+	border: solid 1px #B3B3B3;
+    height:auto;
+	padding:10px;
+}
+.ui-tips-bubble-finance .j-apop-close {
+    right: 10px;
+    position: absolute;
+}
+.ui-icon-arrow-finance {
+    position:absolute;
+    background:url('https://i.alipayobjects.com/e/201208/3LPrsalrOr.png') no-repeat 0 0;
+    width:13px;
+    height:13px;
+    overflow:hidden;
+    text-indent: -9999px;
+    z-index:200;
+}
+.ui-icon-arrow-right {
+	background-position: 0 0;
+	right: -9px;
+}
+.ui-icon-arrow-left {
+	background-position: 0px -16px;
+	left: -8px;
+}
+.ui-icon-arrow-top {
+	background-position: 0px -48px;
+	top: -7px;
+}
+.ui-icon-arrow-bottom {
+	background-position: 0px -32px;
+	bottom: -9px;
+}
+.ui-dialog-fix-finance {
+    position:absolute;/* required */
+    overflow: hidden;
+    height: 100%;
+    left:0;/* required */
+    top:0;/* required */
+    z-index:-1;/* required */
+    _filter:mask();/* required */
+}
+
+/** end ---apop.css---*/
+/**Last Changed Author: linya.qu--Last Changed Date: Tue Feb 19 20:37:37 CST 2013**/
+/**alipay.finance.Apop-1.4**/
+/** CurrentDeveloper: ddcat1115**/
+/** DeployDate: Tue Feb 19 20:52:46 CST 2013**/

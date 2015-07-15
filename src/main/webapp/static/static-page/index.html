@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>世宇乐园</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        
+        <link rel="stylesheet" href="fonts/awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">你用的浏览器 <strong>版本太低啦</strong>. 为了你可以正常显示网页, 建议你更新到IE8以上浏览器 <a href="http://browsehappy.com/">upgrade your browser</a></p>
+        <![endif]-->
+
+         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- top navigation -->
+      <!-- <div id="wrappp"> -->
+        <div class="topbar">
+                <div class="container text-center">
+                    <ul class="list-inline row">
+                        <li class="col-sm-4 col-md-4 unislogo center1 animated bounceInRight"><a href="index.html">世宇游戏平台</a></li>
+                        <li class="col-sm-4 col-md-4 center1">
+                            <form method="get" action="http://www.baidu.com/baidu"  id="search" target="_blank">
+                              <input name="ct" type=hidden value="2097152">
+                              <input name="si" type=hidden value="www.163.com">
+                              <input name="word" id="s_word" type="text" size="40" placeholder="南瓜大本营..." x-webkit-speech/>
+                              <input type="submit" value="search">
+                            </form>
+                        </li>
+                        <li class="login col-sm-2 col-sm-offset-2 col-md-1 col-md-offset-3 center1 pull-right">
+                          <button class="btn btn-sm" data-toggle="modal" data-target="#modal-login-form">登 录</button></li>
+                        <!-- <li class="member-icon col-xs-12 col-sm-4 col-md-4 center1">
+                          <div class="dropdown">
+                              <a href="#" class="dropdown" data-toggle="dropdown"><button class="member-name btn btn-default">用户名要足够长</button></a>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="1" href="#"><i class="fa fa-user"></i> 个人档案</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="1" href="#"><i class="fa fa-cog fa-spin"></i> 用户设置</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="1" href="#"><i class="fa fa-sign-in"></i> 进入后台</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="1" href="#"><i class="fa fa-power-off text-danger"></i> 注销</a></li>
+                              </ul> 
+                          </div>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+        <!-- Static navbar -->
+        <div class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">世宇游戏平台</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首 页</a></li>
+                <li><a href="#">游戏中心</a></li>
+                <li><a href="#">充值中心</a></li>
+                <li><a href="#">会员中心</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Default</a></li>
+                <li class="active"><a href="#">积分商城</a></li>
+                <li><a href="#">Fixed top</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div> <!-- end container -->
+        </div>  <!-- end nav bar -->
+
+        <!-- model login form -->
+        <div class="modal fade" id="modal-login-form" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="loginModalLabel">游戏用户登陆</h4>
+              </div>
+
+              <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="inputUsername1" class="col-sm-3 control-label">用户名</label>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control" id="inputUsername1" placeholder="请输入用户名">
+                      <span class="label label-warning pull-right"> 用户名不存在 </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword1" class="col-sm-3 control-label">密 码</label>
+                    <div class="col-sm-7">
+                      <input type="password" class="form-control" id="inputPassword1" placeholder="请输入密码">
+                      <span class="label label-warning pull-right"> 密码错误 </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-6 col-sm-offset-3 col-sm-4 col-md-offset-3 col-md-3">
+                          <button type="submit" class="btn btn-default btn-primary btn-block">登 陆</button>
+                          <!-- <small><a href="">忘记密码</a></small> -->
+                    </div>
+                  </div>
+                </form>
+              </div> <!-- end modal body -->
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-success">还没有注册?</button>
+              </div>
+
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /. model login form -->
+
+
+        <!-- slider -->
+        <div class="container banner">
+          <div id="unisCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#unisCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#unisCarousel" data-slide-to="1"></li>
+              <li data-target="#unisCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            
+
+              <div class="carousel-inner" id="myCarousel">
+
+                <div class="item active">
+                  <a href="" target="_blank"><img src="img/slider.png" alt=""></a>
+                  <div class="carousel-caption center-block download-slide hidden-xs" style="bottom: 10%;">
+                    <a href="" class="btn btn-primary btn-lg btn-shadow">下载游戏</a>
+                  </div>
+                  <!-- <div class="carousel-caption center-block download-slide visible-xs" style="bottom: 20%;">
+                    <a href="" class="btn btn-sm btn-info">下载游戏</a>
+                  </div> -->
+                </div>
+                <div class="item">
+                  <a href="http://www.baidu.com" target="_blank"><img src="img/slider2.png" alt="..."></a>
+                  <div class="carousel-caption">
+                    <!-- <h2>世宇游戏平台</h2> -->
+                  </div>
+                </div>
+                <div class="item">
+                  <a href=""><img src="img/slider.png" alt="..."></a>
+                  <div class="carousel-caption">
+                    <!-- <h2>世宇游戏平台</h2> -->
+                  </div>
+                </div>
+
+              </div> <!-- end carousel-inner -->
+
+              
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#unisCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#unisCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+
+          </div> <!-- end unisCarousel -->
+        </div> <!-- end container -->
+
+
+      <section class="section-margin">
+        <div class="container">
+              
+            <div class="row margin-bottom">
+              <div class="col-sm-6 col-md-3">
+                <div class="section-title games-title">精品游戏推荐<span class="more"><i class="fa fa-plus-square"></i> <a href="#"> 更多 &raquo;</a></span></div>
+              </div>
+            </div>
+
+            <div class="row margin-bottom">
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile tile-tag tile-hot ">
+                  <img src="img/fruit.png" alt="" class="tile-image animated bounceIn">
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <div class="dropup">
+                    <a type="button" class="btn btn-primary btn-lg btn-block dropdown-toggle" data-toggle="dropdown">下 载</a>
+                    <ul class="dropdown-menu pull-right">
+                        <!-- Dropdown menu links -->
+                        <li><a href=""><i class="fa fa-apple"></i> iOS</a></li>
+                        <li><a href=""><i class="fa fa-android"></i> Android</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">其他系统版本</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile">
+                  <img src="img/fruit.png" alt="" class="tile-image animated bounceIn">
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <a class="btn btn-lg btn-block" href="">下 载</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile">
+                  <img src="img/fruit.png" alt="" class="tile-image animated bounceIn">
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <a class="btn  btn-lg btn-block" href="">下 载</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile tile-tag tile-new">
+                  <img src="img/fruit.png" alt="" class="tile-image animated bounceIn">
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <a class="btn btn-primary btn-lg btn-block" href="">下 载</a>
+                </div>
+              </div>
+            </div> <!-- end row -->
+
+            <div class="row margin-bottom">
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile tile-tag tile-new">
+                  <img src="img/fruit.png" alt="" class="tile-image animated bounceIn">
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <a class="btn btn-primary btn-lg btn-block" href="">下 载</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile">
+                  <img src="img/fruit.png" alt="" class="tile-image animated bounceIn">
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <a class="btn btn-primary btn-lg btn-block" href="">下 载</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile">
+                  <img src="img/fruit.png" alt="" class="tile-image animated bounceIn">
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <a class="btn btn-primary btn-lg btn-block" href="">下 载</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 cachefly">
+                <div class="tile tile-tag tile-new">
+                  <a href=""><img src="img/fruit.png" alt="" class="tile-image animated bounceIn"></a>
+                  <h3 class="tile-title">南瓜大本营</h3>
+                  <p>介绍:本世纪最好玩的游戏, 没有玩过? 你就Out了</p>
+                  <a class="btn btn-primary btn-lg btn-block" href="">下 载</a>
+                </div>
+              </div>
+            </div> <!-- end row -->
+
+        </div> <!-- end container -->
+      </section>
+
+      <section class="news-preview">
+          <div class="container">
+
+            <div class="row margin-bottom">
+              <div class="col-sm-6 col-md-3">
+                <div class="section-title news-title">最近热文<span class="more"><i class="fa fa-plus-square"></i> <a href="#"> 更多 &raquo;</a></span></div>
+              </div>
+            </div>
+
+            <div class="row margin-bottom">
+
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4"><a href=""><img src="img/demo1.png" alt="" class="img-thumbnail"></a></div>
+                  <div class="col-sm-8 col-md-8">
+
+                    <a href=""><h4>英国乔治王子穿蕾丝长袍受洗</h4></a>
+                    <small class="article-tags"><i class="fa fa-bookmark text-danger"></i> <a href="">业界动态</a> , <a href="">转载</a> , <a href="">游戏</a></small>
+                    <p>中新网10月24日电 据外媒报道，英国威廉王子与妻子凯特的长子乔治小王子23日在圣詹姆士宫的教堂接受受洗，整个仪式低调进行,受洗典礼在当天下午举行，由坎特伯雷大主教主持<a href=""><span class="more">更多 &raquo;</span></a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4"><a href=""><img src="img/demo1.png" alt="" class="img-thumbnail"></a></div>
+                  <div class="col-sm-8 col-md-8">
+
+                    <a href=""><h4>英国乔治王子穿蕾丝长袍受洗</h4></a>
+                    <small class="article-tags"><i class="fa fa-bookmark text-danger"></i> <a href="">业界动态</a> , <a href="">转载</a> , <a href="">游戏</a></small>
+                    <p>中新网10月24日电 据外媒报道，英国威廉王子与妻子凯特的长子乔治小王子23日在圣詹姆士宫的教堂接受受洗，整个仪式低调进行,受洗典礼在当天下午举行，由坎特伯雷大主教主持<a href=""><span class="more">更多 &raquo;</span></a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- end row -->
+
+          </div> <!-- end container -->
+      </section>
+      
+      <section id="more-link" style="margin-bottom:40px;">
+        <div class="container text-center">
+        <hr>
+
+          <div class="row">
+            <div class="col-md-offset-3 col-md-3"><a href="http://www.zs-shiyu.com/"><img src="img/logo-link.png" alt="" class="cachefly"></a></div>
+            <!-- <div class="col-md-3"><a href="http://www.shiyushop.cn/"><img src="img/shiyushop.png" alt="" class="cachefly"></a></div> -->
+          </div>
+  
+        </div>
+      </section>
+
+      <!-- </div> end wrappp -->
+
+      <div id="footer">
+          <div class="container">
+            <p class="text-muted credit">&copy; 2013 <a href="#">Unis Game 世宇科技</a></p>
+          </div>
+      </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

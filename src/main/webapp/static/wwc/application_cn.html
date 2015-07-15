@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>世宇|UNIS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/datetimepicker.min.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">你使用的浏览器版本太低啦, 建议你使用火狐或Chrome以获得最好体验.
+                <a href="http://www.firefox.com.cn/">升级到火狐浏览器</a> @世宇技术支持
+            <br>
+            You are using an <strong>outdated</strong> browser, please upgrade your browser to improve your experience.
+             <a href="https://www.mozilla.org/en-US/">upgrade to Firfox</a> @UNIS Tech.</p>
+        <![endif]-->
+
+         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+        <script src="js/vendor/jquery.placeholder.min.js"></script>
+        <![endif]-->
+
+        <div class="container">
+            <div class="header">
+                <img src="img/logo.png" alt="" class="visible-xs" width="150"><img src="img/logo.png" alt="" class="hidden-xs">
+                <h2 class="clearfix signup-heading">全球發佈會2014註冊</h2>
+                <a href="" class="btn btn-lg" style="color:#56bc8a;"><span class="glyphicon glyphicon-circle-arrow-left"></span> 返回</a>
+            </div>
+
+            <div class="overlap">
+                <div class="primary-content">
+                    <div class="language">
+                        <a href="" class="btn btn-lg btn-lan active">中 文</a>
+                        <a href="" class="btn btn-lg btn-lan">English</a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="signup_form">
+                      <!-- 表单错误提示 -->
+                        <div class="alert alert-danger alert-dismissable">
+                          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          請檢查以下紅色表格是否有誤, 請填寫正確后再遞交, 謝謝.
+                        </div>
+                        <form role="form">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                <!-- Company name* -->
+                                  <div class="form-group">
+                                    <label class="sr-only" for="companyname">公司名稱 *</label>
+                                    <input type="email" class="form-control error" id="companyname" placeholder="貴公司名稱 *">
+                                  </div>
+                                </div>
+                          </div><!-- /.row -->
+                        
+                          <div class="row">
+                        <!-- Arrival Date/Time -->
+                            <div class="col-sm-6">
+                              <h4 for="" class="signup_label">預計到達日期</h4>
+                              <input type="text" class="form-control col-sm-6" value="2014-10-01" readonly id="arrvial-date">
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 for="" class="signup_label">是否需要為您提供機場接送?</h4>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <label class="signup_input">
+                                        <input type="radio" name="pickup" id="pickup_no" value="no" checked>
+                                          否
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label class="signup_input">
+                                        <input type="radio" name="pickup" id="pickup_yes" value="yes">
+                                          是
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input style="display: none;" type="text" class="form-control" id="flight_no" placeholder="航班號碼 *">
+                                    </div>
+                                </div>
+                            </div>
+                          </div> <!-- /.row -->
+                          <!-- step 1 basic info -->
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <h3><span class="steplabel">1</span>您的基本信息</h3>
+                                   <p class="help-block">*請把常務聯繫人寫在第一欄, 我們稍後會有專人與您聯繫, 以確保你的旅程安排順利</p>
+                                  <div name="group_applicant">
+                                      <div class="applicant">
+                                          <h4></h4><button class="btn btn-default close" type="button">× 刪除</button>
+                                          <div class="clearfix"></div>
+                                          <div class="row">
+                                            <div class="col-xs-8">
+                                              <div class="form-group">
+                                                <input type="text" class="form-control" id="fullname1" placeholder="姓名 *" onkeyup="nameCard(this);">
+                                              </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                              <select class="form-control">
+                                                <option value ="0">性別</option>
+                                                <option value ="1">男</option>
+                                                <option value ="2">女</option>
+                                              </select>
+                                            </div>
+                                          </div><!-- /.row -->
+
+                                          <div class="row">
+                                              <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="position1" placeholder="職位">
+                                                </div>
+                                               </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-sm-6">
+                                                <div class="form-group">
+                                                  <input type="text" class="form-control" id="phone1" placeholder="手機號碼 *">
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-6">
+                                                <div class="form-group">
+                                                  <input type="email" class="form-control" id="email1" placeholder="email地址 *">
+                                                 </div>
+                                              </div>
+                                          </div>
+                                       </div> <!-- /.applicant -->
+                                    </div> <!-- /.group applicant -->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button type="button" id="add_applicant" onclick="addApplicant()" class="add btn btn-default btn-block"><span class="glyphicon glyphicon-plus"></span> 添加一個 (最多3個)</button>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- /.col-sm-12 -->
+                          </div> <!-- /.row -->
+                          <!-- /.step 1 basic info -->
+
+                          <!-- step 2 Arrangement -->
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <h3><span class="steplabel">2</span>食宿安排</h3>
+                                  <h4><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;住宿</h4>
+                                  <div class="row">
+                                      <div class="col-xs-4">
+                                        <label class="signup_input input-block">
+                                        <input type="radio" name="hotel" id="hotel1" value="Sheraton Hotel" checked>
+                                          金钻酒店
+                                        </label>
+                                      </div>
+                                      <div class="col-xs-4">
+                                        <label class="signup_input input-block">
+                                        <input type="radio" name="hotel" id="hotel2" value="Sheraton Hotel">
+                                          金沙酒店
+                                        </label>
+                                      </div>
+                                      <div class="col-xs-4">
+                                        <label class="signup_input input-block">
+                                        <input type="radio" name="hotel" id="hotel-none" value="Sheraton Hotel">
+                                          不用,謝謝
+                                        </label>
+                                      </div>
+                                  </div>
+                                  <h4><span class="glyphicon glyphicon-cutlery"></span>&nbsp;&nbsp;餐飲</h4>
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                        <label class="signup_input input-block">
+                                        <input type="radio" name="food" id="food1" value="chinese" checked>
+                                         中餐
+                                        </label>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <label class="signup_input input-block">
+                                        <input type="radio" name="food" id="food2" value="western">
+                                         西餐
+                                        </label>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="food3" placeholder="特別需求? 如素食者">
+                                    </div>
+                                  </div>
+                                  <h4><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Recreation</h4>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                        <label class="signup_input input-block">
+                                        <input type="checkbox" name="activity" id="activity1" value="activity1">
+                                         1. 岐江夜遊（10月20晚）
+                                        </label>
+                                      </div>
+                                  
+                                      <div class="col-sm-6">
+                                        <label class="signup_input input-block">
+                                        <input type="checkbox" name="activity" id="activity2" value="activity2">
+                                         2. 孫中山故居（10月20~22下午）
+                                        </label>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                        <label class="signup_input input-block">
+                                        <input type="checkbox" name="activity" id="activity3" value="activity3">
+                                         3. 旅游购物
+                                        </label>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <label class="signup_input input-block">
+                                        <input type="checkbox" name="activity" id="activity4" value="activity4">
+                                         4. 娛樂活動（10月20、21日晚）
+                                        </label>
+                                      </div>
+                                  </div>
+                              </div> <!-- /.col-sm-12 -->
+                          </div> <!-- /.row -->
+                          <!-- /.step 2 Arrangement -->
+
+                          <!-- step 3 Arrangement -->
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <h3><span class="steplabel">3</span>Your message</h3>
+                                  <textarea class="form-control margin-bottom" rows="3" placeholder="您的其它需要或建议"></textarea>
+                                  <p>为了感谢贵司的支持，大会现场将设有合作伙伴信息展示环节，请问贵司是否愿意参加？</p>
+                                  <div class="row">
+                                      <div class="col-sm-3">
+                                        <label class="signup_input input-block">
+                                        <input type="radio" name="join" id="join_no" value="no" checked>
+                                         不用,謝謝!
+                                        </label>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <label class="signup_input input-block">
+                                        <input type="radio" name="join" id="join_yes" value="yes">
+                                         是的
+                                        </label>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div id="send_us" style="display: none;">
+                                            <a  href=mailto:hlj@zs-shiyu.com class="btn btn-default btn-block"><span class="glyphicon glyphicon-paperclip text-info"></span> 附件發到email</a>
+                                             <p class="help-block">發送公司LOGO圖片和視頻資料給我們 
+                                              <br>郵箱: hlj@zs-shiyu.com | QQ:1554684868</p>
+                                         </div>
+                                      </div>
+                                  </div> <!-- /.row -->
+                              </div> <!-- /.col-sm-12 -->
+                          </div> <!-- /.row -->
+
+                          <button class="btn btn-block btn-primary btn-lg">遞 交</button>
+
+
+                        </form>
+                    </div> <!-- /.signup_form -->
+                </div> <!-- /.primary-content -->
+            </div> <!-- /.overlap -->
+            <div class="margin-bottom" style="color:#ededed; margin-top:2em;">
+                <small>
+                  <span class="glyphicon glyphicon-phone-alt"></span> 111111111 <br>
+                  <span class="glyphicon glyphicon-envelope"></span> hlj@zs-shiyu.com <br>
+                  QQ: 1554684868
+                  <br>
+                  © 2014 世宇科技 Unis Technology, Inc.
+                </small>
+              </div>
+        </div>
+        
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/icheck.min.js"></script>
+        <script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/vendor/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>        
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+        $('#arrvial-date').datetimepicker({
+            format:'yyyy-mm-dd',
+             language: 'zh-CN',
+             startView: 2,
+             minView: 2,
+             autoclose: 1
+        });
+        </script>
+    </body>
+</html>

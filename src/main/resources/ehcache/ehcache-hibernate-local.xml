@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false">
+
+	<diskStore path="java.io.tmpdir/hibernate/jzxx" />
+
+	<!-- DefaultCache setting. -->
+	<defaultCache maxEntriesLocalHeap="10000" eternal="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		overflowToDisk="true" memoryStoreEvictionPolicy="LRU" maxEntriesLocalDisk="100000" maxElementsInMemory="10000" />
+
+	<!-- Special objects setting. -->
+	<!-- <cache name="cn.qtone.jzxx.entity.User" maxEntriesLocalHeap="1000" eternal="true"
+		overflowToDisk="true" maxEntriesLocalDisk="10000" />
+	<cache name="cn.qtone.jzxx.entity.Dict" maxEntriesLocalHeap="1000" eternal="true"
+		overflowToDisk="true" maxEntriesLocalDisk="10000" />
+	<cache name="cn.qtone.jzxx.entity.MessageInfo" maxEntriesLocalHeap="100" eternal="true"
+		overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Activity" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Group" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.PrivateLetters" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.JzxxGroup" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.JzxxGroupUser" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.JzxxGroupMessage" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Favourite" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Style" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.SystemConfig" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Classify" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Company" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.UserFollwewer" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.User.groupList" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Group.permissionList" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.User.favourates" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.DownloadClientRecord" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.AtMessage" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.VideoInfo" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Log" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Plan" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Photo" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.PlanCase" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Comment" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="cn.qtone.jzxx.entity.Picture" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	 -->
+	<!-- <cache name="org.hibernate.cache.internal.StandardQueryCache" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		--><cache name="cn.base.entity.Permission" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.PPT" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.base.entity.Mcode" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+
+		<cache name="cn.base.entity.Role" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.base.entity.SubSystem" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.base.entity.Menu" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.base.entity.User" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.PlatformAndMarket" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.Game" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.Picture" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.Log" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.Commodity" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.UserGameCenter" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.TempUrl" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.AlipayDiscount" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.base.entity.Role.permissionList" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.base.entity.User.roleList" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+
+
+		<cache name="cn.unis.wwc.entity.InvitationCode" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.CommodityOrderStatus" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.GameWalletRate" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.wwc.entity.InvitationForm" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.AlipayRecord" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.CommodityLogistics" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.CommodityCategory" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.CommoditySaleRecord" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.wwc.entity.InvitationFormApplicant" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.CommodityOrder" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.wwc.entity.InvitationFormApplicantCheckIn" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.DeliveryAddress" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.Test1" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+		<cache name="cn.unis.entity.Test2" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+
+
+		<cache name="cn.unis.entity.News" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+
+</ehcache>

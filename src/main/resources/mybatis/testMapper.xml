@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper
+	namespace="cn.unis.dao.testMybatisDao">
+	
+ 	<select id="getAll" resultType="map">
+ 		select * from backend_ppt;
+	</select> 
+	
+	<select id="testGet" resultType="Long">
+		select id from backend_news 
+			where sort_number &lt;=#{p1} and id!=#{p2}
+			order by sort_number desc limit 0,1;
+	</select>
+	
+	<update id="testMinus">
+		update unis_game a set sort_number = (a.sort_number - #{delta})
+			where id = 26 and (a.sort_number   -  #{delta}) >=0;
+	</update>
+	
+	<update id="testAdd">
+		update unis_game a set sort_number = (a.sort_number + #{delta})
+			where id = 26 ;
+	</update>
+	
+	<select id="testSqlInject" resultType="map">
+		select id from backend_alipay_record where sign = #{s};
+	</select>
+	
+</mapper> 

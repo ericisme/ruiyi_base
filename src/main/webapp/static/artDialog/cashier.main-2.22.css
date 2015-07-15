@@ -1,0 +1,301 @@
+.aliedit-xbox{width:600px;height:370px;overflow:hidden;position:absolute;z-index:9999;top:5%;left:10%;border:6px solid #767576;background:#fff;-moz-box-shadow:3px 2px 6px #333;-webkit-box-shadow:#333 2px 2px 6px} 
+.aliedit-xbox iframe,.aliedit-box-shadow iframe{width:100%;height:100%} 
+.aliedit-xbox{width:670px;height:380px;overflow:hidden;position:absolute;z-index:9999;top:5%;left:10%;border:6px solid #767576;background:#fff;-moz-box-shadow:3px 2px 6px #333;-webkit-box-shadow:#333 2px 2px 6px} 
+.long-logo .xbox .ui-list-icons{margin-left:20px;*margin-top:10px} 
+.long-logo .xbox .ui-list-icons li{margin-right:20px} 
+.long-logo .xbox .ui-list-tip{margin-left:0} 
+#header .logo,#header .logo .cashier-logo,#header .logo .deposit-logo,.advantage em,.cashier-bank-kj .icon-info,.cashier-bank-kj-NO .icon-info,.ico-safe,.icon-question,.multi-discount,.limited-coupon .action-lj,.tab-col li.current,.ui-apop .ui-icon-arrow-cashier,.ui-btn-ok .ui-btn-text,.ui-btn-ok,.hook,.ui-round-mini-btn,.ui-btn-ok-hover,.ui-btn-ok-hover .ui-btn-text,.ui-btn-cancel .ui-btn-text,.ui-faq dt,.ui-fm-error .ui-fm-icon,.ui-fm-forbidden .ui-fm-icon,.ui-fm-success .ui-fm-icon,.ui-fm-warn .ui-fm-icon,.ui-icon-arrow-cashier,.ui-icon-tip,.ui-btn-cancel,.member-security-icon,.ui-list-icons li.more b,.ui-notice .ui-icon-notice,.ui-state-error .ui-tip-icon,.ui-state-forbidden .ui-tip-icon,.ui-state-info .ui-tip-icon,.ui-state-success .ui-tip-icon,.ui-state-warn .ui-tip-icon,.ui-tip-error .ui-tip-icon,.ui-tip-forbidden .ui-tip-icon,.ui-tip-info .ui-tip-icon,.ui-tip-success .ui-tip-icon,.ui-tip-warn .ui-tip-icon,.ui-tips-cashier .ui-icon,.member,.ui-xbox-action b,.ui-round-btn-more .more,.ui-round-btn-add .add,.ui-area-shrink,.ui-area-expand,.ui-round-btn-add,.ui-round-btn-text,.ui-round-btn-more .expand,.ui-round-btn-more .shrink,.preferential,.express-logo2,#order .bao_logo,.busy .icon,.repair .icon,.repair2 .icon,.repair3 .icon,.restricted .icon,.inline-icon .point,.inline-icon .pcard,.inline-icon .point,.inline-icon .pcard,.ico-promotion-detail,.installment-support,#order .bao_logo,.inline-icon .moneyFund,.icon-box-kIcon .KuaiIconY,.icon-box-kIcon .kuaiIconWords,.icon-discount,.icon-point,.icon-fluency,.icon-backprofit,.icon-discount-orange{background:url("https://i.alipayobjects.com/e/201308/zToYDLtHJ.png") 999px 999px no-repeat} 
+.long-logo .xbox .ui-list-icons li{margin-right:10px} 
+.xbox .tb-inner{border:1px #b4b4b4 solid;border-width:1px 0 0 1px} 
+.xbox .tb-inner table{width:auto;border:0} 
+.xbox .tb-bank-intro{margin-top:10px;border-width:0 0 1px 0} 
+.xbox .tb-bank-intro td,.xbox .tb-bank-intro th{border-right:1px solid #b4b4b4} 
+.xbox .tb-bank-intro table{width:100%;border:0} 
+#container.xbox,#J-chooseBankList.xbox{width:auto;height:auto;padding:20px} 
+#xbox-overlay{position:absolute;z-index:997;top:0;left:0;height:100%;width:100%} 
+* html #xbox-overlay{position:absolute} 
+.xbox-overlay-bg{background-color:#000;filter:alpha(opacity = 20);-moz-opacity:.20;opacity:.20} 
+#xbox-hide-select{z-index:999;background-color:#fff;border:0;filter:alpha(opacity = 0);-moz-opacity:0;opacity:0;width:100%} 
+#xbox-mock{position:absolute;background:#fff;z-index:1002;color:#000;border:6px solid #767576;text-align:left;top:16%;left:30%;overflow:hidden} 
+* html #xbox-mock{position:absolute} 
+#xbox-load{position:fixed;height:13px;width:208px;z-index:1003;top:50%;left:50%;margin:-6px 0 0 -104px} 
+* html #xbox-load{position:absolute} 
+#xbox-iframe{width:100%;height:100%;clear:both;border:0;margin-bottom:-1px;margin-top:1px;_margin-bottom:1px} 
+.container-xbox{padding:20px} 
+#J-chooseBankList.xbox{margin:0 auto;min-height:260px;_height:260px} 
+#xbox-mock .ui-xbox-action{top:24px;right:22px;font-size:16px} 
+#xbox-mock .ui-xbox-action a{text-decoration:none;position:relative;padding-left:20px} 
+#xbox-mock .ui-xbox-action b{background-position:-154px -320px;position:absolute;top:3px;left:0;width:13px;height:13px;overflow:hidden} 
+.long-logo .ui-list-icons li{width:218px;padding-right:10px;display:inline} 
+.long-logo .ui-list-icons .icon-box{*left:0} 
+.long-logo .icon-box,.long-logo .icon-box-commend,.long-logo .icon-box-kj{width:190px;background-color:#fff!important;line-height:36px} 
+.long-logo .bank-num{float:right;padding-top:8px} 
+.long-logo .icon-box .icon,.long-logo .icon-box-commend .icon,.long-logo .icon-box-kj .icon{float:left;width:126px;padding:0} 
+.long-logo .icon-right{float:right;width:15px;margin:0 3px;height:100%;color:#07f;font-weight:bold;overflow:hidden;white-space:nowrap} 
+.long-logo .fenqi{background:url('https://i.alipayobjects.com/e/201203/2lEu9F9RWN.png') no-repeat scroll 0 center;text-indent:-9999px} 
+.long-logo .back170{margin-left:-170px}  
+.long-logo-btn{padding:20px 5px 20px 170px;_padding:20px 5px 20px 170px;background-color:#f4f6fc;border-top:1px solid #e6e8f0} 
+.long-logo-btn .ui-btn-ok,.long-logo-btn .ui-fm-explain{margin-left:-150px} 
+.long-logo .icon-right{width:21px} 
+.long-logo .icon-box,.long-logo .icon-box-commend,.long-logo .icon-box-kj{width:190px} 
+.long-logo .qiye{left:173px} 
+.long-logo .cashier-bank-kj .icon-info,.long-logo .cashier-bank-kj-NO .icon-info{left:160px;top:-10px} 
+.long-logo .cashier-bank-kt .icon-box,.long-logo .cashier-credit-kt .icon-box{background:#fff} 
+.long-logo .qiye{left:170px;border-style:solid solid solid none} 
+.ui-securitycore .ui-form{margin-top:30px} 
+.ui-securitycore .ui-form legend{display:none} 
+.ui-securitycore .ui-form-required{margin-right:6px;font-size:14px;color:#f00;font-family:SimSun} 
+.ui-securitycore .ui-form-explain{padding:3px 0 0;padding:5px 0 0\9;_padding-top:3px;*margin-top:-1px;_margin-left:3px;font-size:12px;color:#b2b2b2;clear:both} 
+.ui-securitycore .ui-form-other{_display:inline-block;margin-left:4px} 
+.ui-securitycore .ui-form-text{display:inline-block;margin-top:4px;*margin-top:6px;_margin-top:4px;zoom:1} 
+.ui-securitycore .ui-form-status{color:#20b907;background:url(https://i.alipayobjects.com/e/201310/1K1BOJg2GD.gif) right bottom no-repeat;padding-right:15px} 
+.ui-securitycore .ui-form-list{_float:left;_width:100%} 
+.ui-securitycore .ui-form-item:after{clear:both;content:'.';display:block;height:0;visibility:hidden} 
+.ui-securitycore .ui-form-item{padding:0 5px 15px 170px;*padding:0 5px 12px 170px;_padding:0 5px 13px 170px;zoom:1;font-family:tahoma,\5b8b\4f53,\9ED1\4F53,"Hei",sans-serif} 
+.ui-securitycore .ui-form-item select{vertical-align:middle;margin:4px 0 0} 
+.ui-securitycore .ui-form-item input{vertical-align:middle} 
+.ui-securitycore .ui-form-item .ui-input{font-size:12px;color:#595959;vertical-align:middle;*vertical-align:-5px} 
+.ui-securitycore .ui-form-item .ui-button-group .ui-button-text-only{margin:3px 0 0;margin:2px 0 0\0} 
+.ui-securitycore .ui-form-item .ui-button-text-only .ui-button-text{padding:.1em .5em} 
+.ui-securitycore .ui-form-item .ui-button-checkboxes .ui-state-selected{padding-right:2px;background:url(https://i.alipayobjects.com/e/201310/1K1CCh5jpN.png) right bottom no-repeat} 
+.ui-securitycore .ui-form-item .ui-form-item-placeholder{color:#b2b2b2!important} 
+.ui-securitycore .ui-form-item-hover .ui-input,.ui-securitycore .ui-form-item-hover .ui-textarea{border:1px #727272 solid} 
+.ui-securitycore .ui-form-item-focus .ui-input,.ui-securitycore .ui-form-item-focus .ui-textarea{border:1px #68acff solid;outline:1px aqua solid;*padding:3px 0 3px 2px;*border:2px #95ddff solid;cursor:text} 
+.ui-securitycore .ui-form-item-focus .ui-textarea{*padding:1px 0 1px 2px} 
+.ui-securitycore .ui-form-item-focus .ui-form-explain,.ui-securitycore .ui-form-item-hover .ui-form-explain{color:#333} 
+.ui-securitycore .ui-form-item-error .alieditContainer,.ui-securitycore .ui-form-item-error .ui-input,.ui-securitycore .ui-form-item-error .ui-textarea{border:1px #F00 solid;color:#ff5243} 
+.ui-securitycore .ui-form-item-error .ui-input-reset{border:1px #9c9c9c solid;color:#000} 
+.ui-securitycore .ui-form-item-error .ui-form-explain,.ui-securitycore .ui-form-item-warn .ui-form-explain,.ui-securitycore .ui-form-item-success .ui-form-explain,.ui-securitycore .ui-form-item-success .ui-form-text,.ui-securitycore-tip .ui-form-explain{background-image:url(https://i.alipayobjects.com/common/widgets/ui-tip.png);background-repeat:no-repeat;padding-left:20px;*zoom:1} 
+.ui-securitycore .ui-form-item-error .ui-form-explain{color:#ff5243;background-position:-272px -472px} 
+.ui-securitycore .ui-form-item-warn .ui-form-explain{background-position:-230px -500px} 
+.ui-securitycore .ui-form-item-error .ui-input:hover,.ui-securitycore .ui-form-item-error .ui-textarea:hover{border:1px #a6a6a6 solid} 
+.ui-securitycore .ui-form-item-error .ui-input:focus,.ui-securitycore .ui-form-item-error .ui-textarea:focus{border:1px #68acff solid;color:#727272} 
+.ui-securitycore .ui-form-item-success .ui-form-text{padding:0 20px 0 0;background-position:-236px -448px;color:#20b907} 
+.ui-securitycore .ui-form-item-success .ui-form-explain,.ui-securitycore-tip .ui-form-explain{background-position:-314px -444px} 
+.ui-securitycore .ui-form-item-loading .ui-form-explain{padding-left:20px;background:url(https://i.alipayobjects.com/e/201310/1K1D7TzLs5.gif) 0 4px no-repeat} 
+.ui-securitycore .ui-form-field input{vertical-align:top} 
+.ui-securitycore .ui-form-field .ui-link{_vertical-align:-5px} 
+.ui-securitycore .cert-section .ui-form-item,.ui-securitycore .ukey-section .ui-form-item,.ui-securitycore .thirdkey-section .ui-form-item{padding-bottom:0} 
+.ui-securitycore-tip .ui-form-explain{height:18px;padding-top:3px;padding-bottom:4px;color:#000} 
+.ui-securitycore-tip .ui-form-item-check .ui-form-explain{padding-left:30px;background:url(https://i.alipayobjects.com/e/201111/26ypQOkVlK.gif) no-repeat 0 0} 
+.ui-form{margin-top:30px} 
+.ui-form legend{display:none} 
+.cashier-box-min .ui-form{margin-top:0} 
+.cashier-box-min .ui-form .ui-fm-item{padding-bottom:8px;padding-left:143px} 
+.channel-tab .ui-form{margin-top:20px} 
+.ui-list-icons{padding-bottom:10px} 
+.ui-list-icons li{float:left;width:156px;padding-bottom:25px;padding-right:20px} 
+.ui-list-icons .icon-box{left:3px;cursor:pointer} 
+.ui-list-icons .current,.ui-list-icons .hover{border-color:#fa3!important} 
+.ui-list-icons .current .healthy{display:block} 
+.ui-list-icons li.more{text-align:center} 
+.ui-list-icons li.more a{display:block;outline:0} 
+.ui-list-icons li.more b{display:block;height:12px;margin:0 auto;width:14px;height:8px;font-size:0} 
+.ui-list-icons li.more b{background-position:-150px -35px} 
+.long-logo-reset .ui-four-icons{margin-left:30px;margin-top:-30px;*margin-top:-20px} 
+.fn-clear:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0} 
+.fn-clear{*zoom:1} 
+.cashier-bank .icon,.cashier-bank-kt .icon,.cashier-credit .icon,.cashier-credit-kt .icon,.cashier-bank-fq .icon,.cashier-bank-qy .icon,.cashier-bank-um .icon,.cashier-bank-kj .icon,.cashier-bank-kj-NO .icon{height:36px} 
+.cashier-bank-kt .icon-box,.cashier-credit-kt .icon-box{border-color:#ddd;background:#eee} 
+.cashier-bank-fq .icon-box,.cashier-bank-qy .icon-box{border-right:0} 
+.cashier-bank-um .icon-box{border:0} 
+.cashier-bank-desc{color:#999;font-weight:normal;padding:4px 0 15px 0} 
+.cashier-bank-fq .icon-info,.cashier-bank-qy .icon-info,.cashier-bank-kj .icon-info,.cashier-bank-kj-NO .icon-info,.cashier-bank .icon-info{background-color:#d2eef7;border:1px solid #DDD;border-left:none;font-weight:normal;height:100%;left:123px;padding:0 3px;position:absolute;top:-1px;line-height:18px} 
+.cashier-bank-fq .icon-info{background-color:#ffdfbd} 
+.cashier-bank-kj .icon-info,.cashier-bank-kj-NO .icon-info{background-position:0 -380px;background-color:#FFF;height:22px;width:17px;left:115px;top:-9px;text-indent:-9999px;border:0} 
+.cashier-bank-fq .current .icon-info,.cashier-bank-qy .current .icon-info,.cashier-bank-kj .current .icon-info,.cashier-bank-kj-NO .current .icon-info{border-color:#f60} 
+.icon-box .icon-box-sparkling{position:absolute;top:-18px;left:0;height:14px;line-height:14px} 
+.icon-box .action-rt,.discount-list .action-rt,.action-rt{line-height:14px;height:14px;font-size:12px!important;background-color:#fff!important;border:1px solid #1e73c1;color:#1e73c1;margin-right:2px;display:inline-block;zoom:1} 
+.ui-tab-cnt .current .icon-box{display:inline-block} 
+.ui-list-icons .icon-box{left:3px;cursor:pointer} 
+icon-box:hover .healthy{display:block} 
+.icon-box:hover{border-color:#fa3!important}  
+.icon-box,.icon-box-commend,.icon-box-kj{width:126px;border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color:#eee} 
+.icon-box .icon-cardNo{font-size:11px;-webkit-text-size-adjust:none} 
+.icon-box .icon,.icon-box-commend .icon,.icon-box-kj .icon{display:block;height:36px;line-height:30px;background-repeat:no-repeat;padding:0 10px;color:#07f;font-weight:bold;white-space:nowrap;overflow:hidden;position:relative;z-index:1} 
+.icon-box .icon-title,.icon-box .icon-title{z-index:2} 
+.icon-box .bank-name,.icon-box-commend .bank-name,.icon-box-kj .bank-name{position:absolute;left:5px;z-index:0;height:36px;width:121px;overflow:hidden} 
+.icon-box-commend{top:-1px;border-right:0;margin-left:5px} 
+.icon-box-kj{top:-1px;border-left:none;margin-right:5px;width:145px} 
+.icon-box-kj .icon{text-indent:-9999px!important;text-align:left} 
+.icon-box-kIcon .KuaiIconY{background-position:0 -616px} 
+.icon-box-kIcon .kuaiIconWords{background-position:0 -656px} 
+.icon-box em{font-weight:normal} 
+.icon-box em{padding-left:3px;padding-right:3px} 
+.icon-box .icon-info{letter-spacing:0} 
+.icon-box .icon-box-cash-info{text-align:center} 
+.icon-box-kj .icon{background:url("https://i.alipayobjects.com/e/201310/1LAFpg27oz.png") no-repeat scroll 0 3px #fff} 
+.icon-box-top{top:5px} 
+.icon-box-kIcon{background-color:transparent;border:0;vertical-align:middle;width:100%;padding-bottom:10px} 
+.icon-box-kIcon .KuaiIcon{float:left;width:106px;height:26px;margin-top:-6px} 
+.icon-box-kIcon .KuaiIconY{float:left;width:71px;height:26px;margin-top:4px;margin-left:5px} 
+.icon-box-kIcon .KuaiIconY{text-indent:-999px} 
+.icon-box-kIcon .icon-box-kIcon-explain{line-height:26px} 
+.icon-box-kIcon-explain span{float:left} 
+.icon-box-kIcon .kuaiIconWords{float:left;width:106px;height:12px;line-height:26px;margin-top:15px;margin-right:15px} 
+.cashier-consumer .icon-box{width:160px} 
+.limited-coupon .action-lj{padding:0 3px;position:absolute;top:-1px;left:110px;background-position:-132px -337px;border:medium none;height:36px;text-indent:-9999px;width:30px} 
+.limited-no-bank .limited-coupon{position:relative;width:250px} 
+.limited-no-bank .limited-coupon .action-lj{height:37px;left:-30px;background-position:-114px -364px;width:18px} 
+@charset "utf-8";.ico-shield,.ico-bow,.ico-box,.ico-assure,.order-type-navigator .icon-question{display:inline-block;overflow:hidden;cursor:default;vertical-align:middle;background:url("https://i.alipayobjects.com/e/201303/2V0t7Te9SO.png") no-repeat} 
+.order-shield .icon-question{background-position:-38px -50px;cursor:pointer;margin:0;width:12px;height:12px} 
+.order-bow .icon-question{background-position:-22px -50px;cursor:pointer;margin:0;width:12px;height:12px} 
+.more-arrow,.shrink-arrow,.ico-creditCard,.realName-icon{display:inline-block;overflow:hidden;cursor:default;vertical-align:middle;background:url("https://i.alipayobjects.com/e/201303/2V0t7Te9SO.png") no-repeat} 
+.realName-icon{width:20px;height:17px;background-position:-110px -49px} 
+.inline-icon .pcard{background-position:-102px -383px;width:16px;height:16px} 
+.inline-icon .icon{display:inline-block;margin-top:-4px;margin-top:0\9;vertical-align:middle;_vertical-align:bottom} 
+.ui-tip-trigger-kuaijie{height:36px;width:75px;display:inline-block;text-indent:-9999px;background:url(https://i.alipayobjects.com/combo.png?d=cashier&t=KuaiIcon) no-repeat 0 0} 
+.ui-icon-wkChannel{height:34px;text-indent:-9999px;margin-left:15px;display:inline-block} 
+.ui-icon-wkChannel-MC{width:95px;background:url(https://i.alipayobjects.com/e/201206/2y1mxGLzMX.png) no-repeat 0 0} 
+.ui-icon-wkChannel-VC{width:46px;background:url(https://i.alipayobjects.com/e/201206/2y1Gyg4ObR.png) no-repeat 0 0} 
+.ui-icon-wkChannel-JC{width:58px;background:url(https://i.alipayobjects.com/e/201206/2y1GiwqigT.png) no-repeat 0 0} 
+.ui-icon-arrow{display:inline-block;height:10px;width:11px;margin-left:5px;background:url(https://i.alipayobjects.com/e/201212/1l3PkzGWoW.png) no-repeat 0 -142px} 
+.ui-select-trigger-disabled .ui-icon-arrow{background-position:0 -126px} 
+.ui-icon-gou{display:inline-block;height:12px;width:12px;margin-left:5px} 
+.ui-installment-select .ui-list-item-select .ui-icon-gou{background:url(https://i.alipayobjects.com/e/201212/1l3PkzGWoW.png) no-repeat 0 -160px} 
+.ui-icon-hot{overflow:hidden} 
+.ui-dialog-content .ui-tip-icon{margin-top:2px} 
+.ui-securitycore .ui-tiptext-icon{width:15px;height:15px;position:absolute;top:0;left:0;text-indent:-9999px} 
+.ui-securitycore .ui-tiptext-icon,.ui-securitycore .ui-tiptext-arrow{background-image:url('https://i.alipayobjects.com/common/widgets/ui-tip.png');background-repeat:no-repeat} 
+.ui-securitycore .ui-tiptext-container .ui-tiptext-icon{top:12px;left:12px} 
+.ui-securitycore .ui-tiptext-message .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-message .ui-tiptext-icon{background-position:-188px -534px} 
+.ui-securitycore .ui-tiptext-success .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-success .ui-tiptext-icon{background-position:-314px -450px} 
+.ui-securitycore .ui-tiptext-error .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-error .ui-tiptext-icon{background-position:-272px -478px} 
+.ui-securitycore .ui-tiptext-warning .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-warning .ui-tiptext-icon{background-position:-230px -506px} 
+.ui-securitycore .ui-tiptext-question .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-question .ui-tiptext-icon{background-position:-62px -618px} 
+.ui-securitycore .ui-tiptext-stop .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-stop .ui-tiptext-icon{background-position:-104px -590px} 
+.ui-securitycore .ui-tiptext-wait .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-wait .ui-tiptext-icon{background-position:-146px -562px} 
+.ui-securitycore .ui-tiptext-check .ui-tiptext-icon,.ui-securitycore .ui-tiptext-container-check .ui-tiptext-icon{background:url(https://i.alipayobjects.com/e/201310/1K1D7TzLs5.gif) 0 0 no-repeat} 
+.ui-securitycore .ui-tip-icon{width:15px;height:15px;position:absolute;top:2px;left:0;text-indent:-9999px;background-image:url('https://i.alipayobjects.com/common/widgets/ui-tip.png');background-repeat:no-repeat} 
+.ui-securitycore .ui-tip-message .ui-tip-icon{background-position:-188px -534px} 
+.ui-securitycore .ui-tip-success .ui-tip-icon{background-position:-314px -450px} 
+.ui-securitycore .ui-tip-error .ui-tip-icon{background-position:-272px -478px} 
+.ui-securitycore .ui-tip-warning .ui-tip-icon{background-position:-230px -506px} 
+.ui-securitycore .ui-tip-question .ui-tip-icon{background-position:-62px -618px} 
+.ui-securitycore .ui-tip-stop .ui-tip-icon{background-position:-104px -590px} 
+.ui-securitycore .ui-tip-wait .ui-tip-icon{background-position:-146px -562px} 
+.ui-securitycore .ui-tip-check .ui-tip-icon{background:url(https://i.alipayobjects.com/e/201310/1K1D7TzLs5.gif) 0 0 no-repeat} 
+.ui-fm-col-first .inline-icon .icon{_vertical-align:middle;_margin-top:-2px}  
+.icon-box:hover{border-color:#fa3!important} 
+.ui-notice .ui-icon-notice{position:absolute;left:50px;top:13px;width:32px;height:32px} 
+.ui-notice-noicon{padding-left:14px;padding-right:0} 
+.ui-icon-arrow-cashier{position:absolute;left:50%;background-repeat:no-repeat} 
+.ui-tip-icon-text .ui-tip-text,.ui-tip-info .ui-tip-text,.ui-tip-warn .ui-tip-text,.ui-tip-success .ui-tip-text,.ui-tip-error .ui-tip-text{padding-left:20px;zoom:1} 
+.ui-tip-icon-text .ui-tip-icon,.ui-tip-info .ui-tip-icon,.ui-tip-warn .ui-tip-icon,.ui-tip-success .ui-tip-icon,.ui-tip-error .ui-tip-icon{position:absolute;left:0;top:2px;width:15px;height:15px;display:block;background-image:url(https://i.alipayobjects.com/e/201310/1L9YQE6l6b.png);background-repeat:no-repeat} 
+.ui-tip-icon-text .ui-tip-icon{left:3px;top:5px} 
+.ui-icon-tip{position:absolute;z-index:1;left:50%;margin-left:-8px;width:16px;height:10px;line-height:10px} 
+.ui-icon-top-arrow{top:-9px;text-indent:-9999em} 
+.ui-icon-bottom-arrow{text-indent:-9999em;margin-top:-1px;_bottom:-9px} 
+#J-point-use .quickPoint-icon-fix{display:inline-block;float:left} 
+#J-point-use .quickPoint-icon-fix .ui-tip-icon{margin-top:4px} 
+.ui-tips-bubble .ui-icon-arrow-cashier{margin:-3px 0 0 -10px;width:16px;height:11px;_bottom:-8px;background-position:-89px -333px;line-height:16px;overflow:hidden} 
+.ui-tips-bubble .ui-icon-top-arrow{top:-9px;_bottom:-12px;background-position:-171px 0} 
+.ui-tips-cashier .ui-icon{position:absolute;z-index:1;left:-8px;top:50%;width:8px;height:15px;margin-top:-10px} 
+.ui-tip-forbidden .ui-tip-icon,.ui-tip-loading .ui-tip-icon{position:absolute;left:0;top:2px;width:15px;height:15px;display:block;background-image:url(https://i.alipayobjects.com/e/201310/1L9YQE6l6b.png);background-repeat:no-repeat} 
+.ui-tip-loading .ui-tip-icon{background-image:url(https://i.alipayobjects.com/e/201310/1L9Z6EqYbt.gif);background-position:0 0} 
+.ui-tip-forbidden .ui-tip-icon{background-position:0 -64px} 
+#J_certNotUse .ui-tip-icon,#J_certNoPtaClicked .ui-tip-icon,#J_scCheck .ui-tip-icon,#J_certNoPta .ui-tip-icon,#J_ukeyOs .ui-tip-icon,.ukey-section .ui-tip .ui-tip-icon,.thirdkey-section .ui-tip .ui-tip-icon{left:50px;top:13px;width:32px;height:32px;background:url(https://i.alipayobjects.com/e/201310/1L9Zl1O9UT.png) no-repeat 0 -72px} 
+.inline-icon .icon{background:url(https://i.alipayobjects.com/e/201310/1LAHJalb8v.png) no-repeat 999px 999px;display:inline-block;height:16px;width:19px;margin-top:-4px;margin-top:0\9;vertical-align:middle;_vertical-align:bottom} 
+.inline-icon .coupon{background-position:0 -155px} 
+.inline-icon-disabled .coupon{background:url(https://i.alipayobjects.com/e/201303/2RMTDatlwK.png) no-repeat 0 0} 
+.inline-icon .promotion{background-position:0 -185px} 
+.inline-icon .promotion-2{background-position:0 -124px;width:41px} 
+.inline-icon .promotion-5{background-position:0 -93px;width:41px} 
+.inline-icon .promotion-10{background-position:0 -62px;width:47px} 
+.inline-icon .promotion-20{background-position:0 -31px;width:47px} 
+.inline-icon .promotion-50{background-position:0 0;width:47px} 
+.icon-question{cursor:pointer;display:inline-block;height:16px;line-height:16px;margin-right:5px;overflow:hidden;position:relative;top:-1px;vertical-align:middle;width:16px} 
+.inline-icon-jfb{background:url('https://i.alipayobjects.com/e/201310/1LAHviimlZ.jpg') no-repeat 999px 999px;display:inline-block;height:16px;width:19px;margin-top:-4px;_margin-top:1px;vertical-align:middle;background-position:0 0;width:16px} 
+.member-security-icon{display:inline-block;width:16px;height:16px;margin-top:1px;vertical-align:middle;line-height:16px;margin-right:3px} 
+.ui-tip-info .ui-tip-icon,.ui-state-info .ui-tip-icon{background-position:-72px -306px} 
+.ui-tip-error .ui-tip-icon,.ui-state-error .ui-tip-icon,.ui-fm-error .ui-fm-icon{background-position:-88px -306px} 
+.ui-tip-warn .ui-tip-icon,.ui-state-warn .ui-tip-icon,.ui-fm-warn .ui-fm-icon{background-position:-104px -306px} 
+.ui-tip-success .ui-tip-icon,.ui-state-success .ui-tip-icon,.ui-fm-success .ui-fm-icon{background-position:-120px -306px} 
+.ui-tip-forbidden .ui-tip-icon,.ui-state-forbidden .ui-tip-icon,.ui-fm-forbidden .ui-fm-icon{background-position:-136px -306px} 
+.ui-state-info .ui-icon-top-arrow{background-position:-72px -320px} 
+.ui-state-info .ui-icon-bottom-arrow{background-position:-89px -322px} 
+.ui-state-error .ui-icon-top-arrow{background-position:-106px -322px} 
+.ui-state-error .ui-icon-bottom-arrow{background-position:-106px -332px} 
+.ui-state-warn .ui-icon-top-arrow{background-position:-72px -332px} 
+.ui-state-warn .ui-icon-bottom-arrow{background-position:-89px -332px} 
+.ui-state-success .ui-icon-notice{background-position:-1px -260px} 
+.ui-state-error .ui-icon-notice{background-position:-1px -294px} 
+.ui-state-hold .ui-icon-notice{background-position:-38px -260px} 
+.ui-state-info .ui-icon-notice{background-position:-38px -294px} 
+.ui-state-warn .ui-icon-notice{background-position:-1px -328px} 
+.ui-state-wait .ui-icon-notice{background-position:-38px -328px} 
+.ui-tips-cashier .ui-icon{background-position:-150px -42px} 
+.ui-fm-label-kj .icon{background-position:right 0!important} 
+.no-cartoon .icon{background-position:-3px 0!important} 
+.inline-icon .pcard{background-position:-102px -383px;width:16px} 
+.inline-icon .moneyFund{background-position:0 -719px;width:16px} 
+.inline-icon .point{background-position:-45px -720px} 
+.icon-question{background-position:-151px -305px} 
+.member-security-icon{background-position:-120px -363px} 
+.icon-discount{background-position:-40px -680px} 
+.icon-backprofit{background-position:-0px -754px} 
+.icon-discount-orange{background-position:-40px -754px} 
+.icon-point{background-position:-81px -680px} 
+.icon-fluency{background-position:0 -680px} 
+.ui-apop .ui-icon-arrow-cashier{left:1px;background-position:-150px -42px;height:16px;margin-top:20px;width:8px;top:0;text-indent:-999px} 
+.bank-icon-fix{margin-top:9px;padding-bottom:10px} 
+.icon-discount,.icon-point,.icon-fluency,.icon-backprofit,.icon-discount-orange{height:20px;width:22px;line-height:30px;float:left;margin-top:5px;margin-right:5px} 
+.cashier-consumer .icon{height:36px} 
+.cashier-consumer .icon-info{position:absolute;left:67px;top:18px} 
+.cashier-consumer .icon-title{position:absolute;left:66px;top:0;font-weight:bold} 
+#J-question-tip .ui-icon-arrow-cashier{margin:-3px 0 0 56px} 
+.repair .icon,.busy .icon,.repair2 .icon,.repair3 .icon,.restricted .icon{height:17px;position:absolute;width:46px!important;line-height:17px;top:0;left:0} 
+.restricted .icon{background-position:right -17px;width:70px!important} 
+.repair .icon{background-position:-74px -260px} 
+.repair2 .icon{background-position:-121px -260px} 
+.repair3 .icon{background-position:right top;width:70px!important} 
+.busy .icon{background-position:-73px -282px} 
+.bank-icon-mask{background-color:#fff;height:36px;left:0;opacity:.6;position:absolute;top:0;width:190px} 
+#phone-validate-notice .ui-icon-tip{left:55px} 
+.ui-list-tip{margin-bottom:5px;padding-bottom:5px;display:block;color:#888;text-align:right;border-bottom:1px dashed #ccc} 
+.ui-btn{display:-moz-inline-box;display:inline-block;*display:inline;vertical-align:middle;line-height:100%;text-align:left;font-size:12px;text-decoration:none;cursor:pointer;zoom:1} 
+.ui-btn,.ui-btn .ui-btn-text{font-family:Tahoma;cursor:pointer;outline:0} 
+.ui-btn{font-family:SimSun} 
+.ui-btn:hover{text-decoration:none} 
+.ui-btn .ui-btn-text{border:0;*border:0;*overflow:visible} 
+body .ui-btn .ui-btn-text{vertical-align:baseline} 
+.ui-btn span,.ui-btn:hover span{display:block;float:left;text-decoration:none} 
+.ui-btn-ok,.ui-btn-ok-hover,.ui-btn-cancel,.ui-btn-ok-disabled,.ui-btn button{font-size:14px} 
+.ui-btn-ok{background-position:0 0} 
+.ui-btn-ok-disabled{background-position:0 -103px} 
+.ui-btn-cancel{background-position:0 -103px} 
+.ui-btn-ok .ui-btn-text,.ui-btn-ok-hover .ui-btn-text,.ui-btn-cancel .ui-btn-text,.ui-btn-ok-disabled .ui-btn-text{padding:0 16px;padding-bottom:3px;*padding-bottom:0;height:31px;line-height:31px;font-weight:bold;color:#fff} 
+.ui-btn-ok span.ui-btn-text,.ui-btn-ok-hover span.ui-btn-text,.ui-btn-ok-hover:hover span.ui-btn-text,.ui-btn-cancel span.ui-btn-text{padding-bottom:3px;_padding-bottom:1px;_line-height:28px;height:25px;*height:26px} 
+.ui-btn-ok-hover,.ui-btn-ok-hover:hover{text-decoration:none} 
+.ui-btn-ok-disabled .ui-btn-text{background:#ccc none;cursor:default} 
+.ui-btn-ok-mini,.ui-btn-cancel-mini{padding:1px} 
+.ui-btn-ok-mini{border:1px #d74c00 solid;background-position:0 -10px} 
+.ui-btn-cancel-mini,.ui-btn-cancel-mini{background-position:0 -103px;color:#5b5b5b;border:1px #bcbcbc solid;*margin-left:3px} 
+.ui-btn-ok-mini .ui-btn-text,.ui-btn-cancel-mini .ui-btn-text{padding:0 9px;height:20px;line-height:20px;color:#fff} 
+.ui-btn-ok-mini,.ui-btn-ok-mini{background-position:0 -15px} 
+.ui-btn-ok-mini .ui-btn-text{background-position:0 -75px} 
+.ui-btn-ok-mini:hover,.ui-btn-ok-mini-hover{border:1px solid #e47000} 
+.ui-btn-ok-mini:hover .ui-btn-text,.ui-btn-ok-mini-hover .ui-btn-text{background-position:0 -518px} 
+.ui-btn-cancel-mini .ui-btn-text{background-position:0 -312px;color:#5b5b5b} 
+.ui-btn-ok-mini span.ui-btn-text,.ui-btn-cancel-mini span.ui-btn-text{line-height:21px} 
+.ui-btn-cancel-mini:hover,.ui-btn-cancel-mini:hover{border:1px solid #6e6e6e} 
+.ui-btn-cancel-mini:hover .ui-btn-text,.ui-btn-cancel-mini-hover .ui-btn-text{background-position:0 -110px} 
+.ui-btn-ok-hover,.ui-btn-ok-hover:hover,.ui-btn-cancel:hover,.ui-btn-ok-mini:hover,.ui-btn-ok-mini-hover:hover,.ui-btn-cancel:hover,.ui-btn-cancel-mini:hover,.ui-btn-cancel-mini-hover:hover{text-decoration:none} 
+.ui-btn-fixed,.ui-btn-4cn,.ui-btn-2cn{display:-moz-inline-box;display:inline-block;*zoom:1;*display:inline;padding:0 0 2px 0;*padding:0;height:19px;*height:21px;line-height:19px line-height:22px\9;_line-height:19px;vertical-align:middle;background:transparent url(https://i.alipayobjects.com/e/201310/1L9TYvZkP7.png) 0 -336px no-repeat;border:0;font-size:12px;text-align:center;color:#4d4d4d;cursor:pointer} 
+input.ui-btn-fixed,input.ui-btn-4cn,input.ui-btn-2cn,button.ui-btn-fixed,button.ui-btn-4cn,button.ui-btn-2cn{height:21px} 
+.ui-btn-fixed:hover,.ui-btn-2cn:hover,.ui-btn-4cn:hover{text-decoration:none;color:#4d4d4d} 
+.ui-btn-fixed{width:45px} 
+.ui-btn-4cn{width:66px;background-position:-53px -336px} 
+.ui-btn-2cn{width:36px;background-position:-128px -336px} 
+.ui-btn-fixed-hover,.ui-btn-fixed:hover{background-position:0 -612px} 
+.ui-btn-4cn-hover,.ui-btn-4cn:hover{background-position:-53px -612px} 
+.ui-btn-2cn-hover,.ui-btn-2cn:hover{background-position:-128px -612px} 
+.ui-btn-ok{background-position:0 -163px;background-repeat:repeat-x} 
+.ui-btn-ok:hover,.ui-btn-ok-hover{background-position:0 -196px} 
+.ui-btn-ok .ui-btn-text{background-position:right -99px;background-repeat:repeat-x} 
+.ui-btn-cancel .ui-btn-text{background-position:right -67px;color:#fff} 
+.ui-btn-ok-hover .ui-btn-text,.ui-btn-ok:hover .ui-btn-text{background-position:right -131px;background-repeat:repeat-x} 
+.ui-btn-cancel{background-position:0 -228px;background-repeat:repeat-x}          
+.cashier-bank-fq .current .icon-info,.cashier-bank-qy .current .icon-info,.cashier-bank-kj .current .icon-info,.cashier-bank-kj-NO .current .icon-info{border-color:#f60}    
+@media screen and (-webkit-min-device-pixel-ratio:0){.long-logo .icon-right{margin:0 0 0 1px} 
+#container h2,#J-savePrototypeContext h2,#J-chooseBankList h2{border-bottom:1px solid #ccc;font-size:16px;padding-bottom:10px;margin-bottom:10px}

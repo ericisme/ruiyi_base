@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/layouts/">
+	<excludes>
+		<pattern>/static/*</pattern>
+		<pattern>/login</pattern>
+		<pattern>/frontEnd/alipay/check**</pattern>
+		<pattern>/frontEnd/alipay/request</pattern>
+		<pattern>/frontEnd/alipay/test1**</pattern>
+		<pattern>/frontEnd/alipay/verifyBySign**</pattern>
+		<pattern>/frontEnd/accountCenter/changePassord**</pattern>
+		<pattern>/www/en/edit</pattern>
+		<pattern>/www/cn/edit</pattern>
+	</excludes>
+
+	<decorator name="list" page="list.jsp">
+		<pattern>/role/**</pattern>
+		<pattern>/permission/*</pattern>
+	</decorator>
+
+	<decorator name="headfoot" page="headfoot.jsp">
+		<pattern>/frontEnd/index</pattern>
+		<pattern>/frontEnd/news/show/**</pattern>
+		<pattern>/frontEnd/news/list**</pattern>
+		<pattern>/frontEnd/gameCenter**</pattern>
+		<pattern>/frontEnd/accountCenter**</pattern>
+		<pattern>/frontEnd/walo3LeggedCallBack**</pattern>
+		<pattern>/frontEnd/alipay**</pattern>
+		<pattern>/frontEnd/game**</pattern>
+		<pattern>/frontEnd/giftcenter**</pattern>
+	</decorator>
+
+</decorators>
+

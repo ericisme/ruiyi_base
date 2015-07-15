@@ -1,0 +1,16 @@
+#########################积分商城部分订单生成器##############################
+create table backend_ordernum_generator(id int(11) primary key);
+
+
+#########################初始化从1000000001开始##############################
+###############注意如果已有数据，需从已有数据的最大值加1 来初始化#########
+insert into backend_ordernum_generator value(1000000001);
+
+#########################在订单保存的时候触发##############################
+delimiter |
+create trigger ordernum_trigger  before insert on unis_commodity_order  for each row
+begin  
+         set NEW.order_num =CONCAT('LP',(select max(id)  from backend_ordernum_generator  for update));
+         update backend_ordernum_generator set backend_ordernum_generator.id = backend_ordernum_generator.id + 1;
+end; 
+|
